@@ -1,2 +1,5 @@
 # LibreOffice locks
 .~lock.*#
+
+# Python
+__pycache__/
