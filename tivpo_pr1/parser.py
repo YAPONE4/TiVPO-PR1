@@ -1,11 +1,11 @@
 from typing import TextIO
+from tivpo_pr1.screen_grid import ScreenGrid
 
 
 class Parser:
-    """Parse file to construct ParsedData."""
+    """Parse file to construct ScreenGrid."""
 
-    def __init__(self):
-        print("Parser createad")
-
-    def parse(file: TextIO):
-        pass
+    @staticmethod
+    def parse(file: TextIO = None) -> ScreenGrid:
+        print("File parsed")
+        return ScreenGrid()
