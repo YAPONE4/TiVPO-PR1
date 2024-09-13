@@ -15,10 +15,15 @@ for symbol in symbols:
 
 
 printer:Printer = Printer()
-printer.drawArrowLeftRight(1, 1)
+'''printer.drawArrowLeft(1, 1)
+printer.drawArrowRight(0, 1)
+printer.drawArrowLeftRight(0, 2)
+printer.drawArrowLeftRight(1, 2)
+printer.drawCircle(2, 2)
+printer.drawSquare(0, 3)
+printer.drawArrowLeft(1, 3)
 printer.drawCircle(2, 1)
-printer.drawArrowLeft(3, 1)
-printer.drawCircle(1, 2)
-printer.drawSquare(2, 2)
-printer.drawSquare(4, 1)
+printer.drawArrowLeftRight(3, 1)
+printer.drawArrowLeft(3, 2)'''
+printer.drawWholePicture(symbols)
 printer.showScreen()
