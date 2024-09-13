@@ -6,6 +6,5 @@ class Parser:
     """Parse file to construct ScreenGrid."""
 
     @staticmethod
-    def parse(file: TextIO = None) -> ScreenGrid:
-        print("File parsed")
+    def parse(file: TextIO) -> ScreenGrid:
         return ScreenGrid()
