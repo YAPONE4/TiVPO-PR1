@@ -4,22 +4,22 @@ class Printer:
 
     t: Turtle = Turtle()
     window: Screen = Screen()
-    coord_x = 270
-    coord_y = 210
+    coord_x = 270 # координаты, отображающие размер фигуры, и ячейки, в которую входит фигура
+    coord_y = 210 # при желании можно оформить всё в скейлинг, но это ещё час работы (больше)
 
     def __init__(self):
-        self.window.screensize(canvwidth=1920, canvheight=1080, bg="white")
-        self.window.setup(1920, 1080)
-        self.window.setworldcoordinates(-1, self.window.window_height() - 1, self.window.window_width() - 1, -1)
-        self.t.hideturtle()
+        self.window.screensize(canvwidth=1920, canvheight=1080, bg="white") # размер холста в пикселях
+        self.window.setup(1920, 1080) # размер окна
+        self.window.setworldcoordinates(-1, self.window.window_height() - 1, self.window.window_width() - 1, -1) # измерения координат, конкретно сейчас оно означает-->
+        self.t.hideturtle() # --> 0, 0 координат находятся в верхнем левом углу
 
     def showScreen(self):
         self.window.exitonclick()
 
-    def setPositionOnCoords(self, index, line):
-        self.t.penup()
-        self.t.setpos(index, line)
-        self.t.pendown()
+    def setPositionOnCoords(self, index, line): # позиционирование под координаты фигуры
+        self.t.penup() # поднять карандаш (не рисовать)
+        self.t.setpos(index, line) # установка позиции
+        self.t.pendown() # опустить карандаш (рисовать)
 
     def drawArrowRight(self, index, line):
         self.setPositionOnCoords((index + 1) * self.coord_x - self.coord_x / 2, line * self.coord_y / 2 + self.coord_y / 2 * (line - 1) + 30 + 20 * line)
