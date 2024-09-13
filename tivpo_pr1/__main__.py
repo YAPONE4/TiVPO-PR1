@@ -15,5 +15,5 @@ for symbol in symbols:
 
 
 printer:Printer = Printer()
-printer.drawArrow()
+printer.drawCircle()
 printer.showScreen()
