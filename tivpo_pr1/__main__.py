@@ -4,7 +4,6 @@ from tivpo_pr1.parser import Parser
 from turtle import *
 from tivpo_pr1.Printer import * 
 
-
 path_to_input_file: Path = Path(Path.cwd(), "examples/input_example.txt")
 
 symbols: list[GridObject]
@@ -16,4 +15,5 @@ for symbol in symbols:
 
 
 printer:Printer = Printer()
+printer.drawArrow()
 printer.showScreen()
