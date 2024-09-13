@@ -4,7 +4,9 @@ from abc import ABC
 class GridObject(ABC):
     """Singular item of the ScreenGrid."""
 
-    symbol: str
+    symbol: str = None
+    line_num: int = None
+    index: int = None
 
 
 class RightArrow(GridObject):
