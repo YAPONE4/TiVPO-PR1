@@ -1,8 +1,8 @@
 from pathlib import Path
-from tivpo_pr1.grid_objects.objects import GridObject
-from tivpo_pr1.parser import Parser
+from grid_objects.objects import GridObject
+from parser import Parser
 from turtle import *
-from tivpo_pr1.printer import *
+from printer import *
 
 path_to_input_file: Path = Path(Path.cwd(), "examples/input_example.txt")
 

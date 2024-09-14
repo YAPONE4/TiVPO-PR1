@@ -1,7 +1,7 @@
 from typing import TextIO
-from tivpo_pr1.grid_objects.objects import GridObject
-from tivpo_pr1.parser.exceptions import InvalidSymbolError
-from tivpo_pr1.grid_objects import GRID_OBJECTS_MAP
+from grid_objects.objects import GridObject
+from parser.exceptions import InvalidSymbolError
+from grid_objects import GRID_OBJECTS_MAP
 
 
 class Parser:
