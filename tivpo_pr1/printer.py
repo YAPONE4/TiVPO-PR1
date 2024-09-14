@@ -1,4 +1,4 @@
-from turtle import *
+from turtle import Turtle, Screen
 
 
 class Printer:
@@ -21,6 +21,7 @@ class Printer:
             -1, self.window.window_height() - 1, self.window.window_width() - 1, -1
         )  # измерения координат, конкретно сейчас оно означает-->
         self.t.hideturtle()  # --> 0, 0 координат находятся в верхнем левом углу
+        self.t.speed(100)
 
     def show_screen(self):
         self.window.exitonclick()
@@ -113,7 +114,9 @@ class Printer:
         self.set_position_on_coords(
             (index + 1) * self.coord_x, line * self.coord_y - self.coord_y + 20 * line
         )
+        self.t.speed(1)
         self.t.circle(self.coord_y / 2)
+        self.t.speed(100)
 
     figuresdict = {
         "->": draw_arrow_right,
