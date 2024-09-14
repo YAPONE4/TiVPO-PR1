@@ -25,5 +25,5 @@ printer.drawArrowLeft(1, 3)
 printer.drawCircle(2, 1)
 printer.drawArrowLeftRight(3, 1)
 printer.drawArrowLeft(3, 2)'''
-printer.drawWholePicture(symbols)
-printer.showScreen()
+printer.draw_whole_picture(symbols)
+printer.show_screen()
