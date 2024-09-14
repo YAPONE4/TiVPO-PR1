@@ -1,10 +1,16 @@
 from pathlib import Path
+import sys
 from grid_objects.objects import GridObject
 from parser import Parser
 from turtle import *
 from printer import *
 
-path_to_input_file: Path = Path(Path.cwd(), "examples/input_example.txt")
+
+if len(sys.argv) < 2:
+    print("ERROR: No input file")
+    exit(-1)
+
+path_to_input_file: Path = Path(sys.argv[1])
 
 symbols: list[GridObject]
 with open(path_to_input_file) as f:
