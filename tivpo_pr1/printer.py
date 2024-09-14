@@ -2,9 +2,12 @@ from turtle import Turtle, Screen
 
 
 class Printer:
-
     t: Turtle = Turtle()
     window: Screen = Screen()
+
+    screen_x = 1820
+    screen_y = 1000
+
     coord_x = (
         270  # координаты, отображающие размер фигуры, и ячейки, в которую входит фигура
     )
@@ -14,9 +17,9 @@ class Printer:
 
     def __init__(self):
         self.window.screensize(
-            canvwidth=1920, canvheight=1080, bg="white"
+            canvwidth=self.screen_x, canvheight=self.screen_y, bg="white"
         )  # размер холста в пикселях
-        self.window.setup(1920, 1080)  # размер окна
+        self.window.setup(self.screen_x, self.screen_y)  # размер окна
         self.window.setworldcoordinates(
             -1, self.window.window_height() - 1, self.window.window_width() - 1, -1
         )  # измерения координат, конкретно сейчас оно означает-->
