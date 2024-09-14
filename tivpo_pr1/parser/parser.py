@@ -28,6 +28,7 @@ class Parser:
                 object.index = index
                 self._parsed_objects.append(object)
             else:
-                raise InvalidSymbolError(
-                    f'Unknown symbol "{symbol}" on line {self._current_line_num} at index {index}'
-                )
+                # raise InvalidSymbolError(
+                #     f'Unknown symbol "{symbol}" on line {self._current_line_num} at index {index}'
+                # )
+                pass
